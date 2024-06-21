@@ -1,4 +1,5 @@
 import "./App.css";
+import axios from "axios";
 
 // Routers
 import { Routes, Route } from "react-router-dom";
@@ -8,9 +9,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Pages
-import PlayPage from "./pages/Play.Page";
-import MoviePage from "./pages/Movie.Page";
-import HomePage from "./pages/Home.Page";
+import PlayPage from "./pages/Play.page";
+import MoviePage from "./pages/Movie.page";
+import HomePage from "./pages/Home.page";
+
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.params = {};
+axios.defaults.params["api_key"] = "5baeae1833024725670ed563997051e7";
 
 function App() {
   return (

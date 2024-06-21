@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Poster = (props) => {
   return (
     <Link to={`/movie/${props.id}`}>
-      {props.original_title}
       <div className="flex flex-col items-start gap-2 px-1 md:px-3">
         <div className="h-40 md:h-80">
           <img
@@ -20,6 +19,7 @@ const Poster = (props) => {
         >
           {props.title}
         </h3>
+        {/* <p>{props.subtitle}</p> */}
       </div>
     </Link>
   );

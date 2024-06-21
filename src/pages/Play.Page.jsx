@@ -1,5 +1,5 @@
 import React from "react";
-import DefaultLayoutHoc from "../layout/Default.Layout";
+import DefaultLayoutHoc from "../layout/Default.layout";
 
 const PlayPage = () => {
   return <div>PlayPage</div>;
